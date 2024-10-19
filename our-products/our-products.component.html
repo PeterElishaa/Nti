@@ -1,0 +1,8 @@
+<div class="products-container">
+  <h2 class="section-title">My Projects</h2>
+  <div class="product" *ngFor="let product of products" [@fadeInOut]>
+    <!-- <img [src]="product.image" alt="{{ product.title }}" class="product-image" /> -->
+    <h3 class="product-title">{{ product.title }}</h3>
+    <p class="product-price">{{ product.description }}</p>
+  </div>
+</div>

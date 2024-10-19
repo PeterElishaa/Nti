@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    /* إضافة الخلفية إلى body */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* ارتفاع الصفحة بالكامل */
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home1.webp');
+      background-size: cover; /* يجعل الصورة تغطي الشاشة بالكامل */
+      background-position: center; /* يجعل الصورة تتمركز في المنتصف */
+      background-repeat: no-repeat; /* يمنع تكرار الصورة */
+      color: white; /* لون النص */
+      font-family: 'Arial', sans-serif; /* خط الصفحة */
+    }
+
+    /* تنسيق النص أو المحتوى */
+    .content {
+      display: flex;
+      flex-direction: column; /* ترتيب المحتوى عمودياً */
+      justify-content: center; /* توسيط المحتوى عمودياً */
+      align-items: center; /* توسيط المحتوى أفقياً */
+      height: 100%;
+      text-align: center; /* محاذاة النص إلى المركز */
+      padding: 0 20px; /* إضافة مسافات جانبية */
+      margin-top: 20px; /* إضافة هامش أعلى لتحريك المحتوى لأسفل */
+    }
+
+    /* نص الوصف */
+    .description {
+      font-size: 1.2rem; /* حجم النص */
+      margin-top: 10px; /* زيادة المسافة بين النصين */
+      max-width: 600px; /* عرض أقصى للنص */
+    }
+
+    h1 {
+      font-size: 5.5rem; /* حجم نص العنوان */
+      margin: 0; /* إزالة الهامش الافتراضي */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* إضافة ظل للنص */
+      margin-top: 300px;
+    }
+  </style>
+</head>
+<body>
+  <!-- home.component.html -->
+  <div id="intro-example">
+    <div class="content">
+      <h1>Welcome to My Portfolio!</h1>
+      <div class="description">
+        Welcome to my portfolio! I am excited to share my journey as a fourth-year engineering student specializing in Communications and Electronics. Here, you'll find a collection of my projects, skills, and experiences in web development. I hope this portfolio provides you with a glimpse of my passion and dedication to the field. Feel free to explore and reach out if you have any questions or collaboration opportunities!
+      </div>
+    </div>
+  </div>
+</body>
+</html>

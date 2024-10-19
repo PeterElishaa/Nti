@@ -1,0 +1,49 @@
+nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    color: white;
+    background-color: black;
+    z-index: 999;
+    padding: 10px;
+    font-size: larger;
+}
+
+
+  .login-button {
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+  .logout-button {
+    display: inline-block; /* لجعل العنصر مثل الزر */
+    padding: 10px 15px; /* حشوة داخلية للزر */
+    background-color: #ff4757; /* لون الخلفية (أحمر مائل للوردي) */
+    color: #ffffff; /* لون النص */
+    border-radius: 5px; /* حواف دائرية */
+    text-decoration: none; /* إزالة الخط السفلي */
+    transition: background-color 0.3s, transform 0.3s; /* تأثيرات سلسة */
+  }
+
+  .logout-button:hover {
+    background-color: #ff6b81; /* لون عند المرور */
+    transform: scale(1.05); /* تكبير طفيف عند المرور */
+  }
+
+  .logout-button:active {
+    transform: scale(0.95); /* تصغير طفيف عند الضغط */
+  }
+
+
+

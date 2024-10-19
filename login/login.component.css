@@ -1,0 +1,47 @@
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: 'Arial', sans-serif; /* Font */
+  margin: 0; /* Remove margins */
+  padding: 20px; /* Add internal spacing */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.input-animation {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-animation:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+.btn-animation {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-animation:hover {
+  background-color: #0056b3; /* Darker button on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.alert {
+  animation: fadeIn 0.5s; /* Fade-in effect for error message */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,22 @@
+ul{
+list-style: none;
+}
+
+li{
+    padding: 10px;
+}
+
+a{
+    color: brown;
+    font-size: large;
+    font-weight: 600;
+}
+aside{
+   
+    background-color: gray;
+}
+
+.active{
+    color: blue;
+}
+

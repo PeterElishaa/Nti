@@ -1,0 +1,13 @@
+<div class="about-section d-flex justify-content-center align-items-center">
+
+  <div class="about-info">
+    <h1>About Me</h1>
+    <p>{{ description }}</p>
+    <div class="skillset">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

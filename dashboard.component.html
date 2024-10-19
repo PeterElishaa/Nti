@@ -1,0 +1,22 @@
+<!-- Form for adding a product -->
+<div class="form-container" [@fadeIn]>
+  <h2 class="form-title">You Can Add a New Product Now</h2>
+  <form [formGroup]="myForm" (ngSubmit)="saveProduct()" class="product-form">
+    <label for="title" class="form-label">Title:</label>
+    <input type="text" formControlName="title" class="form-control input-animation"/>
+
+    <label for="description" class="form-label">Description:</label>
+    <input type="text" formControlName="description" class="form-control input-animation"/>
+
+    <div class="button-group">
+      <button type="submit" class="btn btn-primary btn-animation">Save Product</button>
+      <button type="button" class="btn btn-danger logout-button btn-animation" (click)="logout()">Logout</button>
+    </div>
+  </form>
+</div>
+
+<!-- Displaying the ID and Name -->
+<div class="product-info mt-3" [@fadeIn]>
+  <p><strong>Thanks for choosing us!</strong></p>
+  <p><strong>Best Wishes</strong></p>
+</div>

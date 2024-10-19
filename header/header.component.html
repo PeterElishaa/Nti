@@ -1,0 +1,56 @@
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="backgroundImageExample.toggle()"
+        aria-controls="backgroundImageExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div
+        mdbCollapse
+        #backgroundImageExample="mdbCollapse"
+        class="collapse navbar-collapse"
+        id="backgroundImageExample"
+      >
+        <img
+          src="https://mdbootstrap.com/img/Photos/Avatars/img (31).webp"
+          class="rounded-circle"
+          height="22"
+          alt=""
+          loading="lazy"
+        />
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link text-white" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/about" routerLinkActive="active">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/products" routerLinkActive="active">My project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/dashboard" routerLinkActive="active">dashboard</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white login-button" routerLink="/login">Login</a>
+          </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+</header>

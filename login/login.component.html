@@ -1,0 +1,46 @@
+<section class="text-center text-lg-start">
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right bg-body-tertiary" style="backdrop-filter: blur(30px);">
+          <div class="card-body p-5 shadow-5 text-center" [@fadeIn]>
+            <h2 class="fw-bold mb-5">Login Now</h2>
+
+            <!-- Conditional error message with animation -->
+            <div *ngIf="isLoginError" class="alert alert-danger d-flex align-items-center" role="alert" [@fadeIn]>
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill"/>
+              </svg>
+              <div>
+                The email or password is incorrect, please try again.
+              </div>
+            </div>
+
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="login-form">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" formControlName="email" id="form3Example3" class="form-control input-animation" />
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" formControlName="password" id="form3Example4" class="form-control input-animation" />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+
+              <!-- Submit button with ripple effect -->
+              <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4 btn-animation">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
